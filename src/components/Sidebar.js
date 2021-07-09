@@ -44,7 +44,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
           />
         </li>
         <li>
-          <Link onClick={closeSidebarHandler} to="contact">
+          <Link onClick={closeSidebarHandler} to="/contact">
             3. Contact us
           </Link>
           <StyledLine
