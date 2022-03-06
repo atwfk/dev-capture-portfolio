@@ -9,6 +9,7 @@ import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 
 const App = () => {
+  console.log("deployed");
   const location = useLocation();
   return (
     <div className="App">
