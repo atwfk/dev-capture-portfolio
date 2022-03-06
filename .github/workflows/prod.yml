@@ -1,0 +1,20 @@
+on:
+  push:
+    branches: [master]
+name: 🚀 Deploy main branch on push
+jobs:
+  deploy_prod:
+    name: Deploy prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v2
+
+      - name: 🔨 Build Project
+        run: |
+          npm i
+          npm run predeploy
+
+      - name: deploy Project
+        run: |
+          npm run deploy
